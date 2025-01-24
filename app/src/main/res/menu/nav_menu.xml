@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group_management"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_manage_users"
+            android:icon="@drawable/ic_manage_users"
+            android:title="Manage Users"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/nav_view_users"
+            android:icon="@drawable/ic_view_users"
+            android:title="View Users"
+            app:showAsAction="never"/>
+    </group>
+
+    <group android:id="@+id/group_rooms"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_manage_rooms"
+            android:icon="@drawable/ic_manage_rooms"
+            android:title="Manage Rooms"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/nav_view_rooms"
+            android:icon="@drawable/ic_view_rooms"
+            android:title="View Rooms"
+            app:showAsAction="never"/>
+    </group>
+
+    <group android:id="@+id/group_services"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_manage_services"
+            android:icon="@drawable/ic_manage_services"
+            android:title="Manage Services"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ab"
+            android:title="About LuxeVista"/>
+
+        <item
+            android:id="@+id/nav_view_services"
+            android:icon="@drawable/ic_view_services"
+            android:title="View Services"
+            app:showAsAction="never"/>
+    </group>
+
+    <item
+        android:id="@+id/nav_preferences"
+        android:icon="@drawable/ic_settingss"
+        android:title="Preferences" />
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/no"
+        android:title="Notifications"/>
+
+
+
+    <group android:id="@+id/group_bookings"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_manage_bookings"
+            android:icon="@drawable/ic_bookings"
+            android:title="Manage Bookings"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/nav_manage_reservations"
+            android:icon="@drawable/ic_reservations"
+            android:title="Manage Reservations"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/he"
+            android:title="Help &amp; Support"/>
+
+
+    </group>
+
+    <group android:id="@+id/group_account"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Sign out"
+            app:showAsAction="never"/>
+    </group>
+
+</menu>

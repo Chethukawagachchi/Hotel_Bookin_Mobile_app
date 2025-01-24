@@ -1,0 +1,97 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Primary color -->
+    <color name="colorGray">#B0BEC5</color>   <!-- Gray color for stroke -->
+    <color name="primaryColor">#6200EA</color> <!-- Deep purple -->
+    <color name="secondaryColor">#03DAC5</color> <!-- Teal -->
+    <color name="backgroundColor">#F6F6F6</color> <!-- Light grey background -->
+    <color name="textColorPrimary">#333333</color> <!-- Dark grey text -->
+    <color name="hintColor">#757575</color> <!-- Medium grey for hints -->
+    <color name="buttonColor">#6200EA</color> <!-- Button color matching primary -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White text for button -->
+
+    <!-- Add missing colors here -->
+    <color name="purple_500">#9C27B0</color> <!-- Purple 500 -->
+    <color name="purple_700">#7B1FA2</color> <!-- Purple 700 -->
+    <color name="teal_200">#03DAC5</color> <!-- Teal 200 -->!
+
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#E9EFEE</color>
+    <color name="colorBackgroundLight">#FFFFFF</color> <!-- Add this line -->
+
+    <color name="backgroundDark">#121212</color>
+    <color name="cardBackground">#1E1E1E</color>
+    <color name="goldAccent">#FFD700</color>
+    <color name="goldText">#FFD700</color>
+    <color name="descriptionText">#E0E0E0</color>
+    <color name="footerText">#9E9E9E</color>
+
+    <!-- Primary Colors -->
+    <color name="primary">#1E3D59</color>
+    <color name="primary_dark">#152D43</color>
+    <color name="accent">#F5B971</color>
+
+    <!-- Background Colors -->
+    <color name="background">#121212</color>
+    <color name="card_background">#1F1F1F</color>
+    <color name="drawer_background">#1A1A1A</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+
+    <!-- Hint Colors -->
+    <color name="hint_color">#80FFFFFF</color>
+
+    <!-- Navigation Colors -->
+    <color name="nav_unselected">#757575</color>
+    <color name="nav_selected">@color/accent</color>
+
+
+
+
+    <color name="price_background">#E3F2FD</color>
+    <color name="price_text">#1976D2</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="primary_text">#212121</color>
+
+    <!-- In res/values/colors.xml -->
+    <color name="resort_background">#F8F5F0</color>  <!-- Warm off-white for luxury feel -->
+    <color name="resort_title_text">#1F3A4D</color>  <!-- Deep blue-gray for titles -->
+    <color name="resort_body_text">#4A4A4A</color>   <!-- Soft dark gray for body text -->
+
+
+        <color name="red">#FF0000</color>
+    <color name="colorLoginButton">#FF5722</color>
+    <color name="colorRegisterButton">#4CAF50</color>
+    <color name="colorCancelButton">#757575</color>
+
+
+    <color name="primary_dark_color">#1565C0</color>
+    <color name="primary_light_color">#E3F2FD</color>
+    <color name="accent_color">#FFC107</color>
+
+    <color name="grey_600">#757575</color>
+    <color name="primary_color">#1976D2</color>
+
+
+    <color name="toolbar_background">#4C4B4B</color>
+    <color name="subtitle_background">#6E876F</color>
+
+
+    <color name="calendar_booked_date">#FFE0E0</color>
+    <color name="calendar_reserved_date">#E3F2FD</color>
+    <color name="calendar_available_date">#E8F5E9</color>
+    <color name="calendar_selected_date">#1976D2</color>
+    <color name="calendar_today">#2196F3</color>
+
+    <color name="calendar_background">#F5F5F5</color>
+
+    <color name="light_background">#FFFFFF</color>
+
+
+
+
+
+</resources>

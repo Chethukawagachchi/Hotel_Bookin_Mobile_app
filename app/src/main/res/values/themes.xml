@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Luxv" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Luxv" parent="Base.Theme.Luxv" />
+
+    <style name="Theme.YourApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme -->
+    </style>
+
+
+</resources>

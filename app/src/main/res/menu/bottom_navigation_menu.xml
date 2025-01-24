@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_rooms"
+        android:icon="@drawable/bookroom"
+        android:title="Book Room"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/nav_services"
+        android:icon="@drawable/s"
+        android:title="Services"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/nav_calender"
+        android:icon="@drawable/cal"
+        android:title="Calendar"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/us"
+        android:title="Profile"
+        android:visible="true"/>
+    
+</menu>

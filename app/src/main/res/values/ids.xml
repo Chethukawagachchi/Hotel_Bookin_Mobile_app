@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_calendar" type="id" />
+    <item name="nav_rooms" type="id" />
+    <item name="nav_bookings" type="id" />
+    <item name="btnGoBack" type="id" />
+    <item name="textViewRoomName" type="id" />
+    <item name="textViewPrice" type="id" />
+    <item name="buttonBack" type="id" />
+    <item name="buttonConfirmReservation" type="id" />
+    <item name="editTxtParticipants" type="id" />
+    <item name="editTxtTime" type="id" />
+</resources>

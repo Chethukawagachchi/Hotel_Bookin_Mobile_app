@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Quick Actions Group -->
+    <item android:title="Quick Actions">
+        <menu>
+            <group android:id="@+id/group_bookings" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_rooms"
+                    android:icon="@drawable/bookroom"
+                    android:title="Book Rooms"/>
+                <item
+                    android:id="@+id/nav_services"
+                    android:icon="@drawable/s"
+                    android:title="Book Services"/>
+            </group>
+        </menu>
+    </item>
+
+    <!-- My Reservations Group -->
+    <item android:title="My Bookings &amp; Reservations">
+        <menu>
+            <group android:id="@+id/group_my_data" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Bookings"
+                    android:icon="@drawable/h"
+                    android:title="Active Bookings"/>
+                <item
+                    android:id="@+id/nav_Reservations"
+                    android:icon="@drawable/re"
+                    android:title="Upcoming Reservations"/>
+                <item
+                    android:id="@+id/nav_calender"
+                    android:icon="@drawable/cal"
+                    android:title="Booking Calendar"/>
+            </group>
+        </menu>
+    </item>
+
+    <!-- Account Settings -->
+    <item android:title="Account">
+        <menu>
+            <group android:id="@+id/group_account" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/us"
+                    android:title="My Profile"/>
+                <item
+                    android:id="@+id/nav_notifications"
+                    android:icon="@drawable/no"
+                    android:title="Notifications"/>
+                <item
+                    android:id="@+id/nav_preferences"
+                    android:icon="@drawable/se"
+                    android:title="Preferences"/>
+            </group>
+        </menu>
+    </item>
+
+    <!-- Support & Logout -->
+    <item android:title="Support &amp; More">
+        <menu>
+            <group android:id="@+id/group_other_actions" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/he"
+                    android:title="Help &amp; Support"/>
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ab"
+                    android:title="About LuxeVista"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/lo"
+                    android:title="Sign Out"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

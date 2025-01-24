@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/txtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:onClick="addUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add User"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/beautiful_button_background"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:onClick="searchUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search User"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/beautiful_button_background"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:onClick="updateUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update User"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/beautiful_button_background"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:onClick="deleteUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete User"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/beautiful_button_background"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnClearFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Fields"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/beautiful_button_background"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/beautiful_button_background"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_card_background"
+    android:elevation="4dp"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Date Details"
+        android:textColor="#2C3E50"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:chipSpacing="8dp"
+        app:singleLine="true"
+        app:singleSelection="true"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="#2980B9"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        app:drawableStartCompat="@drawable/ic_status_icon"/>
+
+    <TextView
+        android:id="@+id/noteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="#34495E"
+        android:textSize="16sp"
+        android:background="@drawable/note_background"
+        android:padding="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="#E0E0E0"/>
+
+    <TextView
+        android:id="@+id/bookingDetailsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3E50"
+        android:textSize="16sp"
+        android:drawablePadding="8dp"
+        app:drawableStartCompat="@drawable/ic_booking_details_icon"/>
+
+</LinearLayout>

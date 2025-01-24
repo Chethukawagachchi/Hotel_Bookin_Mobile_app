@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2196F3"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="#1E1E1E">
+
+            <!-- Header Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                android:text="Manage Services"
+                android:textColor="#E0E0E0"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+
+            <!-- Service ID -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="#B0B0B0"
+                app:boxStrokeColor="#4CAF50"
+                app:startIconDrawable="@android:drawable/ic_menu_mylocation"
+                app:startIconTint="#4CAF50">
+
+                <EditText
+                    android:id="@+id/txtServiceID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Service ID"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="#E0E0E0"
+                    android:textColorLink="#E9E1E1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Service Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="#B0B0B0"
+                app:boxStrokeColor="#4CAF50"
+                app:startIconDrawable="@android:drawable/ic_menu_edit"
+                app:startIconTint="#4CAF50">
+
+                <EditText
+                    android:id="@+id/txtServiceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Service Name"
+                    android:padding="16dp"
+                    android:textColor="#E0E0E0"
+                    android:textColorLink="#F0ECEC" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Price -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="#B0B0B0"
+                app:boxStrokeColor="#4CAF50"
+                app:startIconDrawable="@android:drawable/ic_menu_recent_history"
+                app:startIconTint="#4CAF50"
+                app:prefixText="RS"
+                app:prefixTextColor="#B0B0B0">
+
+                <EditText
+                    android:id="@+id/txtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    android:padding="16dp"
+                    android:textColor="#E0E0E0"
+                    android:textColorLink="#F2E9E9" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="#B0B0B0"
+                app:boxStrokeColor="#4CAF50"
+                app:startIconDrawable="@android:drawable/ic_menu_info_details"
+                app:startIconTint="#4CAF50">
+
+                <EditText
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:padding="16dp"
+                    android:textColor="#E0E0E0"
+                    android:textColorLink="#E4DDDD" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Availability -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="#B0B0B0"
+                app:boxStrokeColor="#4CAF50"
+                app:startIconDrawable="@android:drawable/ic_menu_today"
+                app:startIconTint="#4CAF50">
+
+                <Spinner
+                    android:id="@+id/spinnerAvailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:paddingVertical="8dp"
+                    android:background="@null"
+                    android:textColor="#E0E0E0"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Image Section -->
+            <ImageView
+                android:id="@+id/imgService"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:background="#2D2D2D"/>
+
+            <!-- Select Image Button -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:onClick="selectImage"
+                android:text="Select Image"
+                android:backgroundTint="#4CAF50"
+                android:padding="12dp"/>
+
+            <!-- Operation Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnInsert"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Insert"
+                    android:backgroundTint="#4CAF50"
+                    android:onClick="insertService"/>
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="8dp"
+                    android:text="Search"
+                    android:backgroundTint="#4CAF50"
+                    android:onClick="searchServiceById"/>
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Update"
+                    android:backgroundTint="#4CAF50"
+                    android:onClick="updateService"/>
+            </LinearLayout>
+
+            <!-- Delete and Clear Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Delete"
+                    android:backgroundTint="#FF5252"
+                    android:onClick="deleteService"/>
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Clear"
+                    android:backgroundTint="#4CAF50"
+                    android:onClick="clearFields"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1E1E1E"
+        app:itemTextColor="#E0E0E0"
+        app:itemIconTint="#4CAF50"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

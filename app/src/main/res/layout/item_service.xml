@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/background_shape"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Service Image -->
+    <ImageView
+        android:id="@+id/serviceImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+
+    <!-- Service Name -->
+    <TextView
+        android:id="@+id/serviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Service ID -->
+    <TextView
+        android:id="@+id/serviceID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Service Price -->
+    <TextView
+        android:id="@+id/servicePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Service Availability -->
+    <TextView
+        android:id="@+id/serviceAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Service Description -->
+    <TextView
+        android:id="@+id/serviceDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Reserve Service Button -->
+    <Button
+        android:id="@+id/buttonReserveService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserve Service"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:icon="@drawable/logout"
+        android:drawableLeft="@drawable/logout" />
+
+</LinearLayout>

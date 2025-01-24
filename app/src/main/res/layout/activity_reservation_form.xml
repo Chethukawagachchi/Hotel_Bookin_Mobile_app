@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_card_background">
+
+        <!-- Service Details -->
+        <TextView
+            android:id="@+id/txtServiceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service ID: "
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/txtServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Name: "
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/txtServicePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: Rs.0.00"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp" />
+
+        <!-- User Input Fields -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtReservationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Reservation Date"
+                android:focusable="false"
+                android:padding="12dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Time"
+                android:focusable="false"
+                android:padding="12dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter number of participants"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/textTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price: Rs.0.00"
+            android:textSize="16sp"
+            android:textColor="#FF5722"
+            android:paddingTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Confirm Reservation Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonConfirmReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Reservation"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#4CAF50" />
+
+        <!-- Back to Admin Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Admin"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#FF5722" />
+
+    </LinearLayout>
+</ScrollView>
