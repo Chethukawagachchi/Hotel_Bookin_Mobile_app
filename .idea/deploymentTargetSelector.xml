@@ -19,13 +19,13 @@
       <SelectionState runConfigName="AdminViewServicesActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ViewServiceReservationActivity">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="CalenderActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="CustomerReservations">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Customer_Logins">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
