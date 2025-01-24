@@ -29,5 +29,15 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
+    <string name="too_many_attempts">Too many attempts. Please wait 30 seconds.</string>
+    <!-- Add other strings as needed -->
+    <string name="login_blocked">Account temporarily blocked</string>
+    <string name="suspicious_activity">Suspicious activity detected</string>
+
+    <string name="error_loading_users">Error loading users</string>
+    <string name="no_users_found">No users found</string>
+    <string name="error_performing_search">Error performing search</string>
+    <string name="search_hint">Search by email</string>
+
 
 </resources>

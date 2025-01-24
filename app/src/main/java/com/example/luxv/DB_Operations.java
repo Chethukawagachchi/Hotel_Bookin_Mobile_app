@@ -21,6 +21,10 @@ public class DB_Operations extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
+    // Current user and time constants (as specified)
+    private static final String CURRENT_UTC_TIME = "2025-01-24 14:23:00";
+    private static final String CURRENT_USER = "Chethukawagachchi";
+
     // Constructor for DB_Operations with username
     public DB_Operations(Context context, String username) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

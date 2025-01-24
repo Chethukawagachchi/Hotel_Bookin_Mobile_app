@@ -36,12 +36,17 @@ public class Admin_Logins extends AppCompatActivity {
         lblAttempts = findViewById(R.id.lblAttempts);
         btnLogin = findViewById(R.id.btnLogin);
         btnCancel = findViewById(R.id.btnCancel);
+
+        // Set initial attempts text
+        lblAttempts.setText("Attempts: " + loginAttempts);
     }
 
+    // Method to handle login process
     public void processLogin(View view) {
-        String username = txtUsername.getText().toString();
-        String password = txtPassword.getText().toString();
+        String username = txtUsername.getText().toString().trim();
+        String password = txtPassword.getText().toString().trim();
 
+        // Check if username or password fields are empty
         if (username.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, "Username or Password cannot be Empty", Toast.LENGTH_SHORT).show();
         } else {
@@ -56,25 +61,27 @@ public class Admin_Logins extends AppCompatActivity {
                 finish();  // Close the login screen
             } else {
                 loginAttempts++;
+                lblAttempts.setText("Attempts: " + loginAttempts);
+
+                // Check if the maximum login attempts have been reached
                 if (loginAttempts >= MAX_ATTEMPTS) {
                     btnLogin.setEnabled(false);
                     Toast.makeText(this, "Too many Attempts. Try again in 30 seconds", Toast.LENGTH_SHORT).show();
-                    lblAttempts.setText("Attempts: " + loginAttempts);
 
                     // Re-enable the login button after the timeout period
                     new Handler().postDelayed(() -> {
                         btnLogin.setEnabled(true);
                         loginAttempts = 0;
+                        lblAttempts.setText("Attempts: " + loginAttempts);
                     }, TIME_OUT_TIME);
-
                 } else {
-                    lblAttempts.setText("Attempts: " + loginAttempts);
                     Toast.makeText(this, "Login Failed. Attempts " + loginAttempts + " of " + MAX_ATTEMPTS, Toast.LENGTH_SHORT).show();
                 }
             }
         }
     }
 
+    // Method to handle cancel button click
     public void cancel(View view) {
         // Navigate back to the customer login screen
         Intent intent = new Intent(this, Customer_Logins.class);

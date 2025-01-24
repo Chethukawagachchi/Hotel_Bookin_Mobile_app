@@ -11,6 +11,18 @@ import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
     private List<User> users = new ArrayList<>();
+    private final UserClickListener clickListener;
+
+    // Interface for click events
+    public interface UserClickListener {
+        void onUserClick(User user);
+        void onUserLongClick(User user);
+    }
+
+    // Constructor with click listener
+    public UserAdapter(UserClickListener listener) {
+        this.clickListener = listener;
+    }
 
     @NonNull
     @Override
@@ -27,6 +39,21 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         holder.emailTv.setText(user.getEmail());
         holder.mobileTv.setText(String.valueOf(user.getMobile()));
         holder.addressTv.setText(user.getAddress());
+
+        // Set click listeners
+        holder.itemView.setOnClickListener(v -> {
+            if (clickListener != null) {
+                clickListener.onUserClick(user);
+            }
+        });
+
+        holder.itemView.setOnLongClickListener(v -> {
+            if (clickListener != null) {
+                clickListener.onUserLongClick(user);
+                return true;
+            }
+            return false;
+        });
     }
 
     @Override
